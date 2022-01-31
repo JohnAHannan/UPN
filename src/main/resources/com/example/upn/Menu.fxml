@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="950.0" style="-fx-background-color: #eee;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.upn.Controller">
+    <children>
+        <VBox prefHeight="631.0" prefWidth="255.0" style="-fx-background-color: #003466;">
+            <children>
+                <Pane prefHeight="194.0" prefWidth="255.0">
+                    <children>
+                        <Label layoutX="62.0" layoutY="127.0" prefHeight="9.0" prefWidth="193.0" text="University Package" textAlignment="CENTER" textFill="#eeeeee">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="63.0" prefHeight="75.0" prefWidth="199.0" text=" UPN" textFill="#eeeeee">
+                            <font>
+                                <Font name="Calibri Light" size="57.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="62.0" layoutY="119.0" prefHeight="75.0" prefWidth="193.0" text="Notification System" textFill="#eeeeee">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Button id="btnMenuRecipientNav" fx:id="btnMenuRecipientNav" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Recipient Navigation" textFill="#eeeeee">
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding>
+                    <effect>
+                        <Blend mode="SOFT_LIGHT" opacity="0.27" />
+                    </effect>
+                    <font>
+                        <Font name="Calibri Light" size="18.0" />
+                    </font>
+                </Button>
+                <Button id="btnMenuPackageIn" fx:id="btnMenuPackageIn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Package Inventory/Status" textFill="#eeeeee">
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding>
+                    <effect>
+                        <Blend mode="SOFT_LIGHT" opacity="0.27" />
+                    </effect>
+                    <font>
+                        <Font name="Calibri Light" size="18.0" />
+                    </font>
+                </Button>
+                <Button id="btnMenuDigitalSlip" fx:id="btnMenuDigitalSlip" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Digital Slip Entry" textFill="#eeeeee">
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding>
+                    <effect>
+                        <Blend mode="SOFT_LIGHT" opacity="0.27" />
+                    </effect>
+                    <font>
+                        <Font name="Calibri Light" size="18.0" />
+                    </font>
+                </Button>
+                <Button id="btnMenuHelp" fx:id="btnMenuHelp" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Help" textFill="#eeeeee">
+                    <padding>
+                        <Insets left="30.0" />
+                    </padding>
+                    <effect>
+                        <Blend mode="SOFT_LIGHT" opacity="0.27" />
+                    </effect>
+                    <font>
+                        <Font name="Calibri Light" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <GridPane layoutX="259.0" layoutY="167.0" prefHeight="459.0" prefWidth="684.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="226.8000244140625" minHeight="10.0" prefHeight="76.39998474121094" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="404.40001525878904" minHeight="10.0" prefHeight="388.40001525878904" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TableView id="TblRecipient" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #eeeeee;" GridPane.rowIndex="1">
+                    <columns>
+                        <TableColumn prefWidth="297.60003662109375" text="Email" />
+                        <TableColumn prefWidth="142.39996337890625" text="First Name" />
+                        <TableColumn prefWidth="149.5999755859375" text="Last Name" />
+                        <TableColumn prefWidth="91.2000732421875" text="Bldg. #" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+            </children>
+        </GridPane>
+        <Pane fx:id="pnlStatus" layoutX="255.0" layoutY="75.0" prefHeight="90.0" prefWidth="696.0" style="-fx-background-color: #267BBD;">
+            <children>
+                <Label fx:id="lblStatus" layoutX="11.0" layoutY="11.0" prefHeight="67.0" prefWidth="503.0" text="Recipient Navigation" textFill="#eeeeee">
+                    <font>
+                        <Font name="Calibri Light" size="36.0" />
+                    </font>
+                </Label>
+            </children></Pane>
+
+    </children>
+</AnchorPane>
