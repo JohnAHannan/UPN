@@ -19,7 +19,7 @@ public class MenuApplication extends Application {
         primaryStage.show(); */
 
         FXMLLoader fxmlLoader = new FXMLLoader(MenuApplication.class.getResource("Menu.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 950.0, 631.0);
         stage.setTitle("UPN_Menu");
         stage.setScene(scene);
         stage.initStyle(StageStyle.UNDECORATED);
