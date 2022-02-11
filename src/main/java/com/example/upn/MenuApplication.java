@@ -12,18 +12,30 @@ import java.io.IOException;
 public class MenuApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        /*Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
-        primaryStage.setTitle("UPN_Menu");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.show(); */
 
-        FXMLLoader fxmlLoader = new FXMLLoader(MenuApplication.class.getResource("Menu.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 950.0, 631.0);
-        stage.setTitle("UPN_Menu");
-        stage.setScene(scene);
+// Start Login
+//------------------------------------------------
+        FXMLLoader Login = new FXMLLoader(MenuApplication.class.getResource("Login.fxml"));
+        Scene scene0 = new Scene(Login.load(), 950.0, 631.0);
+        stage.setTitle("UPN_Login");
+        stage.setScene(scene0);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
+// End Login
+//------------------------------------------------
+
+
+// Start Main Menu
+//------------------------------------------------
+      /*  FXMLLoader MainMenu = new FXMLLoader(MenuApplication.class.getResource("Menu.fxml"));
+        Scene scene1 = new Scene(MainMenu.load(), 950.0, 631.0);
+        stage.setTitle("UPN_Menu");
+        stage.setScene(scene1);
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.show();
+      */
+// End Main Menu
+//------------------------------------------------
     }
 
     public static void main (String[] args) {

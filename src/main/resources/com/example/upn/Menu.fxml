@@ -37,7 +37,7 @@
                         </Label>
                     </children>
                 </Pane>
-                <Button id="btnMenuRecipientNav" fx:id="btnMenuRecipientNav" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Recipient Navigation" textFill="#eeeeee">
+                <Button id="btnMenuRecipientNav" fx:id="btnMenuRecipientNav" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleMenuClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Recipient Navigation" textFill="#eeeeee">
                     <padding>
                         <Insets left="30.0" />
                     </padding>
@@ -47,8 +47,11 @@
                     <font>
                         <Font name="Calibri Light" size="18.0" />
                     </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
                 </Button>
-                <Button id="btnMenuPackageIn" fx:id="btnMenuPackageIn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Package Inventory/Status" textFill="#eeeeee">
+                <Button id="btnMenuPackageIn" fx:id="btnMenuPackageIn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleMenuClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Package Inventory/Status" textFill="#eeeeee">
                     <padding>
                         <Insets left="30.0" />
                     </padding>
@@ -58,8 +61,11 @@
                     <font>
                         <Font name="Calibri Light" size="18.0" />
                     </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
                 </Button>
-                <Button id="btnMenuDigitalSlip" fx:id="btnMenuDigitalSlip" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Digital Slip Entry" textFill="#eeeeee">
+                <Button id="btnMenuDigitalSlip" fx:id="btnMenuDigitalSlip" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleMenuClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Digital Slip Entry" textFill="#eeeeee">
                     <padding>
                         <Insets left="30.0" />
                     </padding>
@@ -69,8 +75,11 @@
                     <font>
                         <Font name="Calibri Light" size="18.0" />
                     </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
                 </Button>
-                <Button id="btnMenuHelp" fx:id="btnMenuHelp" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Help" textFill="#eeeeee">
+                <Button id="btnMenuHelp" fx:id="btnMenuHelp" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleMenuClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Help" textFill="#eeeeee">
                     <padding>
                         <Insets left="30.0" />
                     </padding>
@@ -80,6 +89,9 @@
                     <font>
                         <Font name="Calibri Light" size="18.0" />
                     </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
                 </Button>
             </children>
         </VBox>
@@ -113,6 +125,11 @@
                     </font>
                 </Label>
             </children></Pane>
+      <Button fx:id="btnCloseMainMenu" layoutX="890.0" layoutY="14.0" minWidth="37.0" mnemonicParsing="false" onAction="#handleMenuClicks" prefHeight="32.0" prefWidth="45.0" style="-fx-background-color: #003466;" text="X" textFill="#eeeeee">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Button>
 
     </children>
 </AnchorPane>
