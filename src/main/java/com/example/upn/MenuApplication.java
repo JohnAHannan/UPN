@@ -13,31 +13,36 @@ public class MenuApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-// Start Login
-//------------------------------------------------
+
+    // Start Login
+    //------------------------------------------------
         FXMLLoader Login = new FXMLLoader(MenuApplication.class.getResource("Login.fxml"));
         Scene scene0 = new Scene(Login.load(), 950.0, 631.0);
         stage.setTitle("UPN_Login");
         stage.setScene(scene0);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
-// End Login
-//------------------------------------------------
+    // End Login
+    //------------------------------------------------
 
 
-// Start Main Menu
-//------------------------------------------------
-      /*  FXMLLoader MainMenu = new FXMLLoader(MenuApplication.class.getResource("Menu.fxml"));
+    // Start Main Menu
+    //------------------------------------------------
+    /*
+        FXMLLoader MainMenu = new FXMLLoader(MenuApplication.class.getResource("Menu.fxml"));
         Scene scene1 = new Scene(MainMenu.load(), 950.0, 631.0);
         stage.setTitle("UPN_Menu");
         stage.setScene(scene1);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
-      */
-// End Main Menu
-//------------------------------------------------
+    */
+    // End Main Menu
+    //------------------------------------------------
     }
 
+
+// main
+//------------------------------------------------
     public static void main (String[] args) {
         launch();
     }

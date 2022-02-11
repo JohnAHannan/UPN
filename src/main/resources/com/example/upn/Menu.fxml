@@ -93,6 +93,20 @@
                   <Insets bottom="5.0" />
                </VBox.margin>
                 </Button>
+            <Button id="btnMenuHelp" fx:id="btnMenuLogout" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleMenuClicks" prefHeight="58.0" prefWidth="262.0" style="-fx-background-color: #003466;" text="Logout" textFill="#eeeeee">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <effect>
+                  <Blend mode="SOFT_LIGHT" opacity="0.27" />
+               </effect>
+               <font>
+                  <Font name="Calibri Light" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+            </Button>
             </children>
         </VBox>
         <GridPane layoutX="259.0" layoutY="167.0" prefHeight="459.0" prefWidth="684.0">
